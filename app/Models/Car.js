@@ -1,5 +1,6 @@
 export class Car {
   constructor(data) {
+    // NOTE '' are for setting defaults
     this.id = data.id
     this.make = data.make || ''
     this.model = data.model || ''
