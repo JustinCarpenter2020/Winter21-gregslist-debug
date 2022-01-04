@@ -1,45 +1,14 @@
-gregslist-mvc
 ============
 
-### Get Started
+### Problems
 
-```terminal
-> npm i
-> npm run sass
-> npm run serve
-```
-
-### AuthConfig
-
-Fill in your AuthConfig with keys from [Auth0](https://auth0.com/)
-
-```javascript
-export const domain = '' 
-export const clientId = '' 
-export const audience = '' 
-```
-## Legal Overview
-
-The content under the CodeWorks®, LLC Organization and all of the individual repos are solely intended for use by CodeWorks Instruction to deliver Educational content to CodeWorks Students.
-
----
-
-## Copyright
-
-© CodeWorks® LLC, 2021. Unauthorized use and/or duplication of this material without express and written permission from CodeWorks, LLC is strictly prohibited.
-
-<img src="https://bcw.blob.core.windows.net/public/img/7815839041305055" width="125">
-
-
-## Legal Overview
-
-The content under the CodeWorks®, LLC Organization and all of the individual repos are solely intended for use by CodeWorks Instruction to deliver Educational content to CodeWorks Students.
-
----
-
-## Copyright
-
-© CodeWorks® LLC, 2021. Unauthorized use and/or duplication of this material without express and written permission from CodeWorks, LLC is strictly prohibited.
-
-
-<img src="https://bcw.blob.core.windows.net/public/img/7815839041305055" width="125">
+axios service - timeout too short
+axios service - missing "s" in "http" base url
+axios service - baseurl has cars
+car controller - car object description miss spelled
+car service - missing forward slash for edit car
+index.html - button is out of form
+Car model - imgURL needs to be imgUrl
+Car Service -add car to page without reloading
+car service - post car endpoint is wrong
+AppState cars is an {} not a []
