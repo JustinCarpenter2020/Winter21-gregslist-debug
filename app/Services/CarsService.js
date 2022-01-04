@@ -17,7 +17,7 @@ class CarsService {
     // this.getAllCars()
     // REVIEW this way is not ideal^^^^^^^ DO IT LOCALLY
     ProxyState.cars = ProxyState.cars.filter(c => c.id !== id)
-    // NOTE this was is good^^^
+    // NOTE this is good^^^
   }
   async createCar(carData) {
     // NOTE what you put after the comma is the data that we are giving to the server to post into the database
