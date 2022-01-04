@@ -34,7 +34,7 @@ export class CarsController {
         year: form.year.value,
         price: form.price.value,
         color: form.color.value,
-        description: form.description.value,
+        descripton: form.description.value,
         imgUrl: form.imgUrl.value
       }
       if (id == "undefined") {
@@ -74,6 +74,7 @@ export class CarsController {
       let foundCar = ProxyState.cars.find(c => c.id == id)
 
       // NOTE grab modal that exists in html, and toggle it
+      // @ts-ignore
       bootstrap.Modal.getOrCreateInstance(document.getElementById('new-listing')).toggle()
 
       document.getElementById('modal-body-slot').innerHTML = getCarform(foundCar)
