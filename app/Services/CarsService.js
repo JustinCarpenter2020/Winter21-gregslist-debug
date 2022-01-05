@@ -21,12 +21,13 @@ class CarsService {
   }
   async createCar(carData) {
     // NOTE what you put after the comma is the data that we are giving to the server to post into the database
-    const res = await api.post('car', carData)
+    const res = await api.post('cars', carData)
     console.log('post car res', res.data)
+    ProxyState.cars = [new Car(res.data), ...ProxyState.cars]
   }
 
   async editCar(carData, id) {
-    const res = await api.put(`cars${id}`, carData)
+    const res = await api.put(`cars/${id}`, carData)
     // NOTE finding the index of the car we just edited
     let editedCarIndex = ProxyState.cars.findIndex(c => c.id == id)
     // NOTE using the index of the car we are going to edit, removing only that one index, and replacing it with the newly edited car 

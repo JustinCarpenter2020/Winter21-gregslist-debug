@@ -8,7 +8,7 @@ export class Car {
     this.price = data.price || 0
     this.description = data.description || ''
     this.color = data.color || ''
-    this.imgUrl = data.imgURL || ''
+    this.imgUrl = data.imgUrl || ''
     this.createdAt = data.createdAt || ''
     this.updatedAt = data.updatedAt || ''
   }

@@ -34,7 +34,7 @@ export class CarsController {
         year: form.year.value,
         price: form.price.value,
         color: form.color.value,
-        descripton: form.description.value,
+        description: form.description.value,
         imgUrl: form.imgUrl.value
       }
       if (id == "undefined") {
@@ -70,6 +70,7 @@ export class CarsController {
 
   async editCar(id) {
     try {
+      debugger
       // NOTE find the car we are going to edit locally first
       let foundCar = ProxyState.cars.find(c => c.id == id)
 
